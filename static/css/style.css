@@ -1,0 +1,35 @@
+h4 {
+   color: #808080;
+   padding: 20px
+}
+.block {
+  background-image: url('/static/img/MARS-2-7.png');
+  width: 150px;
+  height: 50px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+table {
+   width: 100%;
+}
+#square_blue {
+    width: 60px;
+    height: 120px;
+    background: #0000ff;
+}
+#square_blue_gray {
+    width: 60px;
+    height: 120px;
+    background: #26252d;
+}
+#square_red {
+    width: 60px;
+    height: 120px;
+    background: #ff0000;
+}
+#square_red_gray {
+    width: 60px;
+    height: 120px;
+    background: #5E2129;
+}

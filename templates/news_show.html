@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ news.title }}</h1>
+    <img src="{{ img }}" class="rounded mx-auto d-block" alt="Изображение не найдено">
+    <div>{{ news.content }}</div>
+    <div> Место:
+        <img src="{{ address }}" alt="Изображение не найдено">
+    </div>
+    <div> Автор статьи: {{ news.user.name }} {{ news.user.surname }}</div>
+    <div> Дата написания: {{ news.created_date }}</div>
+    <a href="/edit_news/{{ news.id }}" class="btn btn-success">Изменить новость</a>
+    <a href="/delete_news/{{ news.id }}" class="btn btn-danger">Удалить новость</a>
+{% endblock %}

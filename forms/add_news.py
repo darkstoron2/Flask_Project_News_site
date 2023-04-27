@@ -12,6 +12,6 @@ class AddNewsForm(FlaskForm):
     tags = SelectField('Тема', choices=['Спорт', 'IT', 'Бизнес', 'Криминал', 'Политика'], validators=[DataRequired()])
     content = StringField('Текст новости', validators=[DataRequired()])
     address = StringField('Адрес проишествия (если есть)', [Optional()])
-    created_date = DateTimeField('Дата проишествия (по стандарту сегодняшняя дата)', [Optional()])
+    created_date = DateField('Дата проишествия (по стандарту сегодняшняя дата)', [Optional()])
     img = FileField('Картинка к новости (если есть)', validators=[Optional()])
     submit = SubmitField('Добавить')
